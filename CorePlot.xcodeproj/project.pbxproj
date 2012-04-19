@@ -30,6 +30,7 @@
 		070A73DC0F5D8C910014FA84 /* CPTDecimalNumberValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 070A73DA0F5D8C910014FA84 /* CPTDecimalNumberValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		070A73DD0F5D8C910014FA84 /* CPTDecimalNumberValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 070A73DB0F5D8C910014FA84 /* CPTDecimalNumberValueTransformer.m */; };
 		070CF7B00F3CA7AB0001FFF4 /* CorePlot.h in Headers */ = {isa = PBXBuildFile; fileRef = 070CF7AE0F3CA7AB0001FFF4 /* CorePlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071F3CB910FBAB5900D0A7B6 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 071F3CB810FBAB5900D0A7B6 /* License.txt */; };
 		072161EB11D1F6BD009CC871 /* CPTAnnotationHostLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 072161E911D1F6BD009CC871 /* CPTAnnotationHostLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		072161EC11D1F6BD009CC871 /* CPTAnnotationHostLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 072161EA11D1F6BD009CC871 /* CPTAnnotationHostLayer.m */; };
 		0730F67C1094995000E95162 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* CorePlot.framework */; };
@@ -232,6 +233,7 @@
 		070A73DA0F5D8C910014FA84 /* CPTDecimalNumberValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPTDecimalNumberValueTransformer.h; path = ../MacOnly/CPTDecimalNumberValueTransformer.h; sourceTree = "<group>"; };
 		070A73DB0F5D8C910014FA84 /* CPTDecimalNumberValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPTDecimalNumberValueTransformer.m; path = ../MacOnly/CPTDecimalNumberValueTransformer.m; sourceTree = "<group>"; };
 		070CF7AE0F3CA7AB0001FFF4 /* CorePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePlot.h; sourceTree = "<group>"; };
+		071F3CB810FBAB5900D0A7B6 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = License.txt; path = ../License.txt; sourceTree = SOURCE_ROOT; };
 		072161E911D1F6BD009CC871 /* CPTAnnotationHostLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAnnotationHostLayer.h; sourceTree = "<group>"; };
 		072161EA11D1F6BD009CC871 /* CPTAnnotationHostLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTAnnotationHostLayer.m; sourceTree = "<group>"; };
 		0730F600109492D800E95162 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -351,6 +353,7 @@
 		4CD7E9630F4B625900F9BCBB /* CPTUtilitiesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTUtilitiesTests.m; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* CorePlot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CorePlot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9021E5690FC69B2900443472 /* doxygen.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = doxygen.config; path = ../documentation/doxygen/doxygen.config; sourceTree = SOURCE_ROOT; };
 		906156BC0F375598001B75FC /* CPTLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLineStyle.h; sourceTree = "<group>"; };
 		906156BD0F375598001B75FC /* CPTLineStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTLineStyle.m; sourceTree = "<group>"; };
 		90AF4FB90F36D39700753D26 /* CPTXYPlotSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTXYPlotSpace.m; sourceTree = "<group>"; };
@@ -369,6 +372,10 @@
 		BCFC7C3610921FDB00DAECAA /* CPTAxisTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTAxisTitle.m; sourceTree = "<group>"; };
 		C30550EB1399BE5400E0151F /* CPTLegendEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLegendEntry.h; sourceTree = "<group>"; };
 		C30550EC1399BE5400E0151F /* CPTLegendEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTLegendEntry.m; sourceTree = "<group>"; };
+		C30889FE149C28C600EABCE6 /* customdoxygen.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = customdoxygen.css; path = ../documentation/doxygen/customdoxygen.css; sourceTree = "<group>"; };
+		C30889FF149C28C600EABCE6 /* footer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; name = footer.html; path = ../documentation/doxygen/footer.html; sourceTree = "<group>"; };
+		C3088A00149C28C600EABCE6 /* header.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; name = header.html; path = ../documentation/doxygen/header.html; sourceTree = "<group>"; };
+		C30E979F14B290520012204A /* DoxygenLayout.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = DoxygenLayout.xml; path = ../documentation/doxygen/DoxygenLayout.xml; sourceTree = "<group>"; };
 		C318F4AB11EA188700595FF9 /* CPTLimitBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTLimitBand.h; sourceTree = "<group>"; };
 		C318F4AC11EA188700595FF9 /* CPTLimitBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTLimitBand.m; sourceTree = "<group>"; };
 		C32B391610AA4C78000470D4 /* CPTGridLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTGridLines.h; sourceTree = "<group>"; };
@@ -404,6 +411,7 @@
 		C3A695E4146A19BC00AF5653 /* CPTMutablePlotRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTMutablePlotRange.m; sourceTree = "<group>"; };
 		C3AFC9CF0FB62969005DFFDC /* CPTImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTImage.h; sourceTree = "<group>"; };
 		C3AFC9D00FB62969005DFFDC /* CPTImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTImage.m; sourceTree = "<group>"; };
+		C3B235631009931400970270 /* doxygen-cocoa-tags.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "doxygen-cocoa-tags.xml"; path = "../documentation/doxygen/doxygen-cocoa-tags.xml"; sourceTree = "<group>"; };
 		C3C032C710B8DEDC003A11B6 /* CPTAxisLabelGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTAxisLabelGroup.h; sourceTree = "<group>"; };
 		C3C032C810B8DEDC003A11B6 /* CPTAxisLabelGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTAxisLabelGroup.m; sourceTree = "<group>"; };
 		C3CADDC511B167AD00D36017 /* CPTMutableNumericDataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTMutableNumericDataTests.h; sourceTree = "<group>"; };
@@ -440,6 +448,7 @@
 		C3DA34CB107AD7710051DA02 /* _CPTXYTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CPTXYTheme.h; sourceTree = "<group>"; };
 		C3F31DE71045EB470058520A /* CPTPlotGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTPlotGroup.m; sourceTree = "<group>"; };
 		C3F31DE81045EB470058520A /* CPTPlotGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTPlotGroup.h; sourceTree = "<group>"; };
+		C3FF6EF00FFFA51D00AF0496 /* mainpage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mainpage.h; path = Source/mainpage.h; sourceTree = "<group>"; };
 		D0C0477B12D6560900DA8047 /* CPTRangePlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTRangePlot.m; sourceTree = "<group>"; };
 		D0C0477C12D6560900DA8047 /* CPTRangePlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTRangePlot.h; sourceTree = "<group>"; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -767,6 +776,7 @@
 				07BF0D600F2B6FE1002FCEA7 /* Source */,
 				07BF0D5F0F2B6FE1002FCEA7 /* Mac Specific */,
 				4C32D37A0F43B3B400EDFE7A /* Test Host */,
+				9021E4920FC5C6DD00443472 /* Documentation */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
@@ -787,6 +797,7 @@
 		089C1665FE841158C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				071F3CB810FBAB5900D0A7B6 /* License.txt */,
 				0730F601109492D800E95162 /* UnitTests-Info.plist */,
 				8DC2EF5A0486A6940098B216 /* Info.plist */,
 				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
@@ -907,6 +918,20 @@
 				C36468A90FE5533F0064B186 /* CPTTextStyleTests.m */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		9021E4920FC5C6DD00443472 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				9021E5690FC69B2900443472 /* doxygen.config */,
+				C3FF6EF00FFFA51D00AF0496 /* mainpage.h */,
+				C3B235631009931400970270 /* doxygen-cocoa-tags.xml */,
+				C30E979F14B290520012204A /* DoxygenLayout.xml */,
+				C3088A00149C28C600EABCE6 /* header.html */,
+				C30889FF149C28C600EABCE6 /* footer.html */,
+				C30889FE149C28C600EABCE6 /* customdoxygen.css */,
+			);
+			name = Documentation;
 			sourceTree = "<group>";
 		};
 		906156BA0F375558001B75FC /* Drawing */ = {
@@ -1191,7 +1216,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "CorePlot" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1228,6 +1253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				071F3CB910FBAB5900D0A7B6 /* License.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

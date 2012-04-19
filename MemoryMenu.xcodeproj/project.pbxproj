@@ -8,7 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
-		293F84111540304700860AE1 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F84101540304700860AE1 /* CorePlot.framework */; };
+		293F8440154034D300860AE1 /* PlotItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 293F843F154034C200860AE1 /* PlotItem.m */; };
+		293F8441154034D600860AE1 /* SimplePieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 293F84331540349900860AE1 /* SimplePieChart.m */; };
+		293F8444154034F100860AE1 /* PlotGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 293F8443154034F100860AE1 /* PlotGallery.m */; };
+		293F84471540351000860AE1 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F84451540350F00860AE1 /* Quartz.framework */; };
+		293F84481540351000860AE1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F84461540350F00860AE1 /* QuartzCore.framework */; };
+		293F844B1540377D00860AE1 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F842A154033F800860AE1 /* CorePlot.framework */; };
 		298F549E15401BF600C13CF5 /* MemoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 298F549B15401AF400C13CF5 /* MemoryFactory.m */; };
 		298F54A115401DFD00C13CF5 /* MemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298F54A015401DFD00C13CF5 /* MemoryViewController.m */; };
 		53797E660E004E0D00281C85 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53797E650E004E0D00281C85 /* AppController.m */; };
@@ -18,11 +23,36 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		293F8429154033F800860AE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 293F8420154033F700860AE1 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = CorePlot;
+		};
+		293F842B154033F800860AE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 293F8420154033F700860AE1 /* CorePlot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0730F600109492D800E95162;
+			remoteInfo = UnitTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		293F84101540304700860AE1 /* CorePlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CorePlot.framework; path = ../CorePlot_1.0/Binaries/MacOS/CorePlot.framework; sourceTree = "<group>"; };
+		293F8420154033F700860AE1 /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = framework/CorePlot.xcodeproj; sourceTree = "<group>"; };
+		293F84321540349900860AE1 /* SimplePieChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimplePieChart.h; sourceTree = "<group>"; };
+		293F84331540349900860AE1 /* SimplePieChart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePieChart.m; sourceTree = "<group>"; };
+		293F843E154034C200860AE1 /* PlotItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlotItem.h; sourceTree = "<group>"; };
+		293F843F154034C200860AE1 /* PlotItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlotItem.m; sourceTree = "<group>"; };
+		293F8442154034F100860AE1 /* PlotGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotGallery.h; sourceTree = "<group>"; };
+		293F8443154034F100860AE1 /* PlotGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotGallery.m; sourceTree = "<group>"; };
+		293F84451540350F00860AE1 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Quartz.framework; sourceTree = DEVELOPER_DIR; };
+		293F84461540350F00860AE1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		298F549A15401AF400C13CF5 /* MemoryFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryFactory.h; sourceTree = "<group>"; };
 		298F549B15401AF400C13CF5 /* MemoryFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryFactory.m; sourceTree = "<group>"; };
 		298F549F15401DFD00C13CF5 /* MemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryViewController.h; sourceTree = "<group>"; };
@@ -31,7 +61,6 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* MemoryMenu_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryMenu_Prefix.pch; sourceTree = "<group>"; };
-		5317CAA70E098D0700E4A1F1 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		53797E640E004E0D00281C85 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		53797E650E004E0D00281C85 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		53C971110E082354002966ED /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -44,7 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				293F84111540304700860AE1 /* CorePlot.framework in Frameworks */,
+				293F844B1540377D00860AE1 /* CorePlot.framework in Frameworks */,
+				293F84471540351000860AE1 /* Quartz.framework in Frameworks */,
+				293F84481540351000860AE1 /* QuartzCore.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +86,12 @@
 		080E96DDFE201D6D7F000001 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				293F8442154034F100860AE1 /* PlotGallery.h */,
+				293F8443154034F100860AE1 /* PlotGallery.m */,
+				293F843E154034C200860AE1 /* PlotItem.h */,
+				293F843F154034C200860AE1 /* PlotItem.m */,
+				293F84321540349900860AE1 /* SimplePieChart.h */,
+				293F84331540349900860AE1 /* SimplePieChart.m */,
 				298F549A15401AF400C13CF5 /* MemoryFactory.h */,
 				298F549F15401DFD00C13CF5 /* MemoryViewController.h */,
 				298F54A015401DFD00C13CF5 /* MemoryViewController.m */,
@@ -92,10 +129,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		293F8421154033F700860AE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				293F842A154033F800860AE1 /* CorePlot.framework */,
+				293F842C154033F800860AE1 /* UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* AppList */ = {
 			isa = PBXGroup;
 			children = (
-				5317CAA70E098D0700E4A1F1 /* ReadMe.txt */,
+				293F84451540350F00860AE1 /* Quartz.framework */,
+				293F84461540350F00860AE1 /* QuartzCore.framework */,
+				293F8420154033F700860AE1 /* CorePlot.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -118,7 +166,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				293F84101540304700860AE1 /* CorePlot.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -160,12 +207,35 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* AppList */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 293F8421154033F700860AE1 /* Products */;
+					ProjectRef = 293F8420154033F700860AE1 /* CorePlot.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* MemoryMenu */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		293F842A154033F800860AE1 /* CorePlot.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CorePlot.framework;
+			remoteRef = 293F8429154033F800860AE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		293F842C154033F800860AE1 /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = 293F842B154033F800860AE1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D1107290486CEB800E47090 /* Resources */ = {
@@ -186,9 +256,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				298F549E15401BF600C13CF5 /* MemoryFactory.m in Sources */,
+				293F8440154034D300860AE1 /* PlotItem.m in Sources */,
+				293F8441154034D600860AE1 /* SimplePieChart.m in Sources */,
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				53797E660E004E0D00281C85 /* AppController.m in Sources */,
 				298F54A115401DFD00C13CF5 /* MemoryViewController.m in Sources */,
+				293F8444154034F100860AE1 /* PlotGallery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

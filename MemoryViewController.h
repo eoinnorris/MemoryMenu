@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "CorePlot/CorePlot.h"
+#import "SimplePieChart.h"
 @class MemoryFactory;
 
 @interface MemoryViewController : NSViewController {
@@ -20,8 +21,11 @@
     NSView *mainView;
     MemoryFactory* memFactory;
     NSTimer* timer;
+    SimplePieChart* pieChart;
 
+    CPTGraphHostingView *graphView;
 }
+@property (assign) IBOutlet CPTGraphHostingView *graphView;
 
 @property (assign) IBOutlet NSTextField *freeMemory;
 @property (assign) IBOutlet NSTextField *wiredMemory;
