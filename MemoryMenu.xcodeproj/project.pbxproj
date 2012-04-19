@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		293F84111540304700860AE1 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F84101540304700860AE1 /* CorePlot.framework */; };
 		298F549E15401BF600C13CF5 /* MemoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 298F549B15401AF400C13CF5 /* MemoryFactory.m */; };
 		298F54A115401DFD00C13CF5 /* MemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298F54A015401DFD00C13CF5 /* MemoryViewController.m */; };
 		53797E660E004E0D00281C85 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53797E650E004E0D00281C85 /* AppController.m */; };
@@ -21,6 +22,7 @@
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		293F84101540304700860AE1 /* CorePlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CorePlot.framework; path = ../CorePlot_1.0/Binaries/MacOS/CorePlot.framework; sourceTree = "<group>"; };
 		298F549A15401AF400C13CF5 /* MemoryFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryFactory.h; sourceTree = "<group>"; };
 		298F549B15401AF400C13CF5 /* MemoryFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryFactory.m; sourceTree = "<group>"; };
 		298F549F15401DFD00C13CF5 /* MemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryViewController.h; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				293F84111540304700860AE1 /* CorePlot.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +118,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				293F84101540304700860AE1 /* CorePlot.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -223,6 +227,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../CorePlot_1.0/Binaries/MacOS\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -241,6 +249,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../CorePlot_1.0/Binaries/MacOS\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MemoryMenu_Prefix.pch;
