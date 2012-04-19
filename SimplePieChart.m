@@ -51,14 +51,18 @@
 	[self addGraph:graph toHostingView:layerHostingView];
 	[self applyTheme:theme toGraph:graph withDefault:[CPTTheme themeNamed:kCPTPlainWhiteTheme]];
 
+   
+    
 	graph.title = title;
 	CPTMutableTextStyle *textStyle = [CPTMutableTextStyle textStyle];
-	textStyle.color				   = [CPTColor grayColor];
+	textStyle.color				   = [CPTColor blackColor];
 	textStyle.fontName			   = @"Arial";
 	textStyle.fontSize			   = bounds.size.height / 20.0f;
 	graph.titleTextStyle		   = textStyle;
-	graph.titleDisplacement		   = CGPointMake(0.0f, bounds.size.height / 18.0f);
+	graph.titleDisplacement		   = CGPointMake(0.0f, -20.f);
 	graph.titlePlotAreaFrameAnchor = CPTRectAnchorTop;
+    graph.plotAreaFrame.borderLineStyle = nil;    // don't draw a border
+
 
 	graph.plotAreaFrame.masksToBorder = NO;
 
@@ -96,13 +100,17 @@
 	CPTLegend *theLegend = [CPTLegend legendWithGraph:graph];
 	theLegend.numberOfColumns = 1;
 	theLegend.fill			  = [CPTFill fillWithColor:[CPTColor whiteColor]];
-	//theLegend.borderLineStyle = [CPTLineStyle lineStyle];
+    theLegend.swatchSize = CGSizeMake(8, 8);
+    CPTMutableTextStyle *legendTextStyle = [CPTMutableTextStyle textStyle];
+	legendTextStyle.color				   = [CPTColor blackColor];
+	legendTextStyle.fontSize			   = 10.0;
+    theLegend.textStyle = legendTextStyle;
 	theLegend.cornerRadius	  = 5.0;
 
 	graph.legend = theLegend;
 
-	graph.legendAnchor		 = CPTRectAnchorRight;
-	graph.legendDisplacement = CGPointMake(-boundsPadding -30.0, -100.0);
+	graph.legendAnchor		 = CPTRectAnchorCenter;
+	graph.legendDisplacement = CGPointMake(0.0, -100.0);
 }
 
 -(CPTLayer *)dataLabelForPlot:(CPTPlot *)plot recordIndex:(NSUInteger)index

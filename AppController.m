@@ -34,7 +34,7 @@
 	// this menu item will have a view with one NSButton
 	NSMenuItem* customItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Custom" action:nil keyEquivalent:@""];
     [customItem setEnabled:YES];
-    //self.mainView.frame = NSMakeRect(0.0, 0.0, 400.0, 400.0);
+    self.mainView.frame = NSMakeRect(0.0, 0.0, 400.0, 400.0);
 	[customItem setView: self.mainView];
 	[customItem setTarget:self];
     [newMenu addItem:customItem];
