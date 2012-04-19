@@ -7,29 +7,76 @@
 @synthesize tableView;
 @synthesize arrayController;
 
+-(void)quitSelectedApps{
+    
+}
+
+-(void)closeSelectedApps{
+    
+}
+
+-(void)quitAndRelaunchSelectedApps{
+    
+}
+
+-(void)purgeMemory{
+    
+}
+
+-(void)logout{
+    
+}
+
 -(NSMenu*)customMenu{
-    NSMenuItem* newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Custom" action:NULL keyEquivalent:@""];
-    NSMenu* newMenu = [[NSMenu allocWithZone:[NSMenu menuZone]] initWithTitle:@"Custom"];
-    [newItem setEnabled:YES];
-	[newItem setSubmenu:newMenu];
-    [newMenu release];
-	[[NSApp mainMenu] insertItem:newItem atIndex:3];
-    [newItem release];
-	
+    NSMenu* newMenu = [[NSMenu allocWithZone:[NSMenu menuZone]] initWithTitle:@"Custom"];	
 	// create the menu items for this menu
 	
 	// this menu item will have a view with one NSButton
-	newItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Custom" action:@selector(menuItem1Action:) keyEquivalent:@""];
-    [newItem setEnabled:YES];
+	NSMenuItem* customItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Custom" action:nil keyEquivalent:@""];
+    [customItem setEnabled:YES];
     self.mainView.frame = NSMakeRect(0.0, 0.0, 400.0, 400.0);
-	[newItem setView: self.mainView];
-	[newItem setTarget:self];
-    [newMenu addItem:newItem];
-    [newItem release];
+	[customItem setView: self.mainView];
+	[customItem setTarget:self];
+    [newMenu addItem:customItem];
+    [customItem release];
     
-    return newMenu;
+    NSMenuItem* quitItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Quit Selected..." action:@selector(quitSelectedApps) keyEquivalent:@""];
+    [quitItem setEnabled:YES];
+	[quitItem setTarget:self];
+    [newMenu addItem:quitItem];
+    [quitItem release];
+    
+    NSMenuItem* quitRelaunchItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Quit And Relaunch Selected..." action:@selector(quitAndRelaunchSelectedApps) keyEquivalent:@""];
+    [quitRelaunchItem setEnabled:YES];
+	[quitRelaunchItem setTarget:self];
+    [newMenu addItem:quitRelaunchItem];
+    [quitRelaunchItem release];
+    
+    
+    NSMenuItem* closeItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Close Windows for Selection" action:@selector(closeSelectedApps) keyEquivalent:@""];
+    [closeItem setEnabled:YES];
+	[closeItem setTarget:self];
+    [newMenu addItem:closeItem];
+    [closeItem release];
+    
+    NSMenuItem* purgeItem = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Purge Inactive Memory" action:@selector(purgeMemory) keyEquivalent:@""];
+    [purgeItem setEnabled:YES];
+	[purgeItem setTarget:self];
+    [newMenu addItem:purgeItem];
+    [purgeItem release];
+    
+    
+    NSMenuItem* logOut = [[NSMenuItem allocWithZone:[NSMenu menuZone]] initWithTitle:@"Logout" action:@selector(logout) keyEquivalent:@""];
+    [logOut setEnabled:YES];
+	[logOut setTarget:self];
+    [newMenu addItem:logOut];
+    [logOut release];
+    
+    
+    return [newMenu autorelease];
 
 }
+
 - (void)activateStatusMenu
 {
     NSStatusBar *bar = [NSStatusBar systemStatusBar];

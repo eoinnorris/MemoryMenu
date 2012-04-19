@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		298F549E15401BF600C13CF5 /* MemoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 298F549B15401AF400C13CF5 /* MemoryFactory.m */; };
+		298F54A115401DFD00C13CF5 /* MemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298F54A015401DFD00C13CF5 /* MemoryViewController.m */; };
 		53797E660E004E0D00281C85 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53797E650E004E0D00281C85 /* AppController.m */; };
 		53C971120E082354002966ED /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 53C971100E082354002966ED /* Credits.rtf */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -19,10 +21,14 @@
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		298F549A15401AF400C13CF5 /* MemoryFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryFactory.h; sourceTree = "<group>"; };
+		298F549B15401AF400C13CF5 /* MemoryFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryFactory.m; sourceTree = "<group>"; };
+		298F549F15401DFD00C13CF5 /* MemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryViewController.h; sourceTree = "<group>"; };
+		298F54A015401DFD00C13CF5 /* MemoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32CA4F630368D1EE00C91783 /* MemoryMenu_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; path = MemoryMenu_Prefix.pch; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MemoryMenu_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryMenu_Prefix.pch; sourceTree = "<group>"; };
 		5317CAA70E098D0700E4A1F1 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		53797E640E004E0D00281C85 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		53797E650E004E0D00281C85 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
@@ -46,6 +52,10 @@
 		080E96DDFE201D6D7F000001 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				298F549A15401AF400C13CF5 /* MemoryFactory.h */,
+				298F549F15401DFD00C13CF5 /* MemoryViewController.h */,
+				298F54A015401DFD00C13CF5 /* MemoryViewController.m */,
+				298F549B15401AF400C13CF5 /* MemoryFactory.m */,
 				32CA4F630368D1EE00C91783 /* MemoryMenu_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				53797E640E004E0D00281C85 /* AppController.h */,
@@ -171,8 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298F549E15401BF600C13CF5 /* MemoryFactory.m in Sources */,
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				53797E660E004E0D00281C85 /* AppController.m in Sources */,
+				298F54A115401DFD00C13CF5 /* MemoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
