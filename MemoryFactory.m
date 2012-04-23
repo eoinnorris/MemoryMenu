@@ -28,7 +28,60 @@
 #include <sys/sysctl.h>
 
 @implementation MemoryFactory
+@synthesize graphView;
+@synthesize freeMemory;
+@synthesize wiredMemory;
+@synthesize activeMemory;
+@synthesize pagins;
+@synthesize pageOuts;
+@synthesize inActiveMemory;
+@synthesize mainView;
 
+
+-(void)reloadData{
+    
+    [memFactory getLatestMemoryInfo];
+    NSInteger freeMem = [self freeBytes];
+    NSInteger activeMem = [self activeBytes];
+    NSInteger wiredMem = [self wiredBytes];
+    NSInteger inActiveMem = [self inactiveBytes];
+    
+    NSNumber* freeMemN = [NSNumber numberWithInteger:freeMem];
+    NSNumber* activeMemN = [NSNumber numberWithInteger:activeMem];
+    NSNumber* wiredMemN = [NSNumber numberWithInteger:wiredMem];
+    NSNumber* inActiveMemN = [NSNumber numberWithInteger:inActiveMem];
+    NSArray* values = [NSArray arrayWithObjects:activeMemN,freeMemN,inActiveMemN,wiredMemN,nil]; 
+      NSArray* names = [NSArray arrayWithObjects:@"Active Memory",@"Free Memory",@"InActive Memory",@"Wired Memory",nil];
+    
+    if (pieChart == nil){
+        [SimplePieChart load];
+      
+        pieChart = [[SimplePieChart alloc] init];
+        pieChart.legendNames = names;
+    }
+    
+    if (self.customStatusView == nil){
+        self.customStatusView   = [[CustomStatusView alloc] initWithFrame:CGRectMake(0.0, 0.0, 40.0, 20.0)];
+        [TinyPieChart load];
+        self.customStatusView.tinyPieChart = [[TinyPieChart alloc] init];
+        self.customStatusView.tinyPieChart.legendNames = names;
+
+    }
+    
+    pieChart.plotData = values;
+    self.customStatusView.tinyPieChart.plotData = values;
+    [ self.customStatusView.tinyPieChart renderInView:self.customStatusView withTheme:[CPTTheme themeNamed:@"Memory Pie"]];
+    [pieChart renderInView:self.graphView withTheme:[CPTTheme themeNamed:@"Memory Pie"]];
+    
+    
+    
+    [mainView setNeedsDisplay:YES];
+    if (timer == nil){
+        timer = [[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(reloadData) userInfo:nil repeats:YES] retain];
+    }
+    
+    
+}
 - (id)init {
     host = mach_host_self();
 

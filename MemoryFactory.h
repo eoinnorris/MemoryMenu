@@ -3,6 +3,8 @@
 #import <Foundation/Foundation.h>
 #import <mach/host_info.h>
 #import <mach/mach_host.h>
+#import "SimplePieChart.h"
+#import "CustomStatusView.h"
 
 @interface MemoryFactory : NSObject {
 @private
@@ -16,7 +18,31 @@
 	u_int64_t					totalSwap;
 	
 	u_int32_t					pageSize;
+    NSTextField *freeMemory;
+    NSTextField *wiredMemory;
+    NSTextField *activeMemory;
+    NSTextField *pagins;
+    NSTextField *pageOuts;
+    NSTextField *inActiveMemory;
+    NSView *mainView;
+    MemoryFactory* memFactory;
+    NSTimer* timer;
+    SimplePieChart* pieChart;
+    
+    CustomStatusView* customStatusView;
+    CPTGraphHostingView *graphView;
 }
+
+@property (assign) IBOutlet CPTGraphHostingView *graphView;
+
+@property (assign) IBOutlet NSTextField *freeMemory;
+@property (assign) IBOutlet NSTextField *wiredMemory;
+@property (assign) IBOutlet NSTextField *activeMemory;
+@property (assign) IBOutlet NSTextField *pagins;
+@property (assign) IBOutlet NSTextField *pageOuts;
+@property (assign) IBOutlet NSTextField *inActiveMemory;
+@property (assign) IBOutlet NSView *mainView;
+@property (assign) CustomStatusView* customStatusView;
 
 - (void)getLatestMemoryInfo;
 

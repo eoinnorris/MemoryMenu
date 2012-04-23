@@ -13,11 +13,14 @@
 		293F8444154034F100860AE1 /* PlotGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 293F8443154034F100860AE1 /* PlotGallery.m */; };
 		293F84471540351000860AE1 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F84451540350F00860AE1 /* Quartz.framework */; };
 		293F84481540351000860AE1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F84461540350F00860AE1 /* QuartzCore.framework */; };
-		293F844B1540377D00860AE1 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F842A154033F800860AE1 /* CorePlot.framework */; };
+		293F844B1540377D00860AE1 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F842A154033F800860AE1 /* CorePlot.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		293F845415405E9100860AE1 /* CorePlot.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 293F842A154033F800860AE1 /* CorePlot.framework */; };
+		2947173215458C7900D8A523 /* CircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2947172D154584A200D8A523 /* CircularProgressView.m */; };
+		2947173515459B0C00D8A523 /* TinyPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 2947173415459B0C00D8A523 /* TinyPieChart.m */; };
+		294717381545A92200D8A523 /* CustomStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 294717371545A92200D8A523 /* CustomStatusView.m */; };
 		298F549E15401BF600C13CF5 /* MemoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 298F549B15401AF400C13CF5 /* MemoryFactory.m */; };
 		298F54A115401DFD00C13CF5 /* MemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298F54A015401DFD00C13CF5 /* MemoryViewController.m */; };
 		53797E660E004E0D00281C85 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53797E650E004E0D00281C85 /* AppController.m */; };
-		53C971120E082354002966ED /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 53C971100E082354002966ED /* Credits.rtf */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -40,6 +43,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		293F845315405E7700860AE1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				293F845415405E9100860AE1 /* CorePlot.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -53,6 +69,14 @@
 		293F8443154034F100860AE1 /* PlotGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlotGallery.m; sourceTree = "<group>"; };
 		293F84451540350F00860AE1 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Quartz.framework; sourceTree = DEVELOPER_DIR; };
 		293F84461540350F00860AE1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		293F844C15405AA600860AE1 /* framework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = framework; sourceTree = "<group>"; };
+		293F845115405CF000860AE1 /* CorePlot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CorePlot.framework; path = "../../../Library/Developer/Xcode/DerivedData/MemoryMenu-gukbbfojxvxwttardrqbrhkxqbdi/Build/Products/Debug/CorePlot.framework"; sourceTree = "<group>"; };
+		2947172C154584A200D8A523 /* CircularProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularProgressView.h; sourceTree = "<group>"; };
+		2947172D154584A200D8A523 /* CircularProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularProgressView.m; sourceTree = "<group>"; };
+		2947173315459B0C00D8A523 /* TinyPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyPieChart.h; sourceTree = "<group>"; };
+		2947173415459B0C00D8A523 /* TinyPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TinyPieChart.m; sourceTree = "<group>"; };
+		294717361545A92200D8A523 /* CustomStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStatusView.h; sourceTree = "<group>"; };
+		294717371545A92200D8A523 /* CustomStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomStatusView.m; sourceTree = "<group>"; };
 		298F549A15401AF400C13CF5 /* MemoryFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryFactory.h; sourceTree = "<group>"; };
 		298F549B15401AF400C13CF5 /* MemoryFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryFactory.m; sourceTree = "<group>"; };
 		298F549F15401DFD00C13CF5 /* MemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryViewController.h; sourceTree = "<group>"; };
@@ -86,13 +110,19 @@
 		080E96DDFE201D6D7F000001 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2947172C154584A200D8A523 /* CircularProgressView.h */,
+				2947172D154584A200D8A523 /* CircularProgressView.m */,
 				293F8442154034F100860AE1 /* PlotGallery.h */,
 				293F8443154034F100860AE1 /* PlotGallery.m */,
 				293F843E154034C200860AE1 /* PlotItem.h */,
 				293F843F154034C200860AE1 /* PlotItem.m */,
 				293F84321540349900860AE1 /* SimplePieChart.h */,
 				293F84331540349900860AE1 /* SimplePieChart.m */,
+				2947173315459B0C00D8A523 /* TinyPieChart.h */,
+				2947173415459B0C00D8A523 /* TinyPieChart.m */,
 				298F549A15401AF400C13CF5 /* MemoryFactory.h */,
+				294717361545A92200D8A523 /* CustomStatusView.h */,
+				294717371545A92200D8A523 /* CustomStatusView.m */,
 				298F549F15401DFD00C13CF5 /* MemoryViewController.h */,
 				298F54A015401DFD00C13CF5 /* MemoryViewController.m */,
 				298F549B15401AF400C13CF5 /* MemoryFactory.m */,
@@ -115,6 +145,7 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				293F845115405CF000860AE1 /* CorePlot.framework */,
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
 			);
@@ -141,6 +172,7 @@
 		29B97314FDCFA39411CA2CEA /* AppList */ = {
 			isa = PBXGroup;
 			children = (
+				293F844C15405AA600860AE1 /* framework */,
 				293F84451540350F00860AE1 /* Quartz.framework */,
 				293F84461540350F00860AE1 /* QuartzCore.framework */,
 				293F8420154033F700860AE1 /* CorePlot.xcodeproj */,
@@ -182,6 +214,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				293F845315405E7700860AE1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -244,7 +277,6 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
-				53C971120E082354002966ED /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2947173215458C7900D8A523 /* CircularProgressView.m in Sources */,
 				298F549E15401BF600C13CF5 /* MemoryFactory.m in Sources */,
 				293F8440154034D300860AE1 /* PlotItem.m in Sources */,
 				293F8441154034D600860AE1 /* SimplePieChart.m in Sources */,
@@ -262,6 +295,8 @@
 				53797E660E004E0D00281C85 /* AppController.m in Sources */,
 				298F54A115401DFD00C13CF5 /* MemoryViewController.m in Sources */,
 				293F8444154034F100860AE1 /* PlotGallery.m in Sources */,
+				2947173515459B0C00D8A523 /* TinyPieChart.m in Sources */,
+				294717381545A92200D8A523 /* CustomStatusView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +338,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../CorePlot_1.0/Binaries/MacOS\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/MemoryMenu-gukbbfojxvxwttardrqbrhkxqbdi/Build/Products/Debug\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -325,6 +361,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../CorePlot_1.0/Binaries/MacOS\"",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/MemoryMenu-gukbbfojxvxwttardrqbrhkxqbdi/Build/Products/Debug\"",
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

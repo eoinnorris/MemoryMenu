@@ -42,8 +42,7 @@
 
 
 
--(void)renderInLayer:(CPTGraphHostingView *)layerHostingView withTheme:(CPTTheme *)theme
-{
+-(void)renderInLayer:(CPTGraphHostingView *)layerHostingView withTheme:(CPTTheme *)theme{
 
 	CGRect bounds = NSRectToCGRect(layerHostingView.bounds);
 

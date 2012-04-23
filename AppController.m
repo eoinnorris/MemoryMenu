@@ -1,11 +1,13 @@
 
 
 #import "AppController.h"
+#import "CircularProgressView.h"
 
 @implementation AppController
 @synthesize mainView;
 @synthesize tableView;
 @synthesize arrayController;
+
 
 -(void)quitSelectedApps{
     
@@ -77,19 +79,31 @@
 
 }
 
+
+
 - (void)activateStatusMenu
 {
     NSStatusBar *bar = [NSStatusBar systemStatusBar];
+    CircularProgressView* cirView = [[[CircularProgressView alloc] initWithFrame:NSMakeRect(0.0, 0.0, 40.0, 20.0)] autorelease];
     
     NSStatusItem* theItem = [bar statusItemWithLength:NSVariableStatusItemLength];
     [theItem retain];
     
-    [theItem setTitle: NSLocalizedString(@"TT",@"")];
-    [theItem setHighlightMode:YES];
+    [theItem setHighlightMode:NO];
     [theItem setMenu:[self customMenu]];
+    
+    [theItem setTitle: NSLocalizedString(@"TT",@"")];
+    theItem.view = cirView;
+    
+    [cirView setMenu:[self customMenu]];
+    [cirView setStatusItem:theItem];
+    [cirView setToolTip:NSLocalizedString(@"Memory Menu",
+                                                 @"Status Item Tooltip")];
+    
+
 }
 
--(void)awakeFromNib{
+-(void)awakeFromNib{    
     [self activateStatusMenu];
 }
 

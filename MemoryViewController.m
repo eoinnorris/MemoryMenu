@@ -37,17 +37,6 @@
     NSNumber* wiredMemN = [NSNumber numberWithInteger:wiredMem];
     NSNumber* inActiveMemN = [NSNumber numberWithInteger:inActiveMem];
   
-#if 0
-    
-    u_int32_t recentPageIns  = [self.memFactory recentPageIns];
-    u_int32_t recentPageOuts  = [self.memFactory recentPageOuts];
-    
-    
-    NSString* recentPageInStr = [NSString stringWithFormat:@"%u",recentPageIns];
-    NSString* recentPageOutStr = [NSString stringWithFormat:@"%u",recentPageOuts];
-    
-#endif
-    
     
     if (pieChart == nil){
         [SimplePieChart load];
